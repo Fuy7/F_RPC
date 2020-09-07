@@ -59,7 +59,7 @@ My-RPC-Framework 是一款基于 Nacos 实现的 RPC 框架。网络传输实现
 ### 定义调用接口
 
 ```java
-package top.guoziyang.rpc.api;
+package com.fuy.rpc.api;
 
 public interface HelloService {
     String hello(String name);
@@ -69,7 +69,7 @@ public interface HelloService {
 ### 在服务提供侧实现该接口
 
 ```java
-package top.guoziyang.test;
+package com.fuy.test;
 
 import HelloService;
 
@@ -85,7 +85,7 @@ public class HelloServiceImpl implements HelloService {
 ### 编写服务提供者
 
 ```java
-package top.guoziyang.test;
+package com.fuy.test;
 
 import HelloService;
 import CommonSerializer;
@@ -105,7 +105,7 @@ public class NettyTestServer {
 ### 在服务消费侧远程调用
 
 ```java
-package top.guoziyang.test;
+package com.fuy.test;
 
 import HelloService;
 import CommonSerializer;
